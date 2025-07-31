@@ -2,7 +2,7 @@
 
 A responsive image gallery application built with JavaScript that uses the Pexels API to display and search for high-quality stock photos.
 
-![Screenshot](https://ibb.co/gFLhSMNR)
+![Screenshot](https://i.ibb.co/93kSb96r/stock-Grid-screenshot.png)
 
 ## Features
 
