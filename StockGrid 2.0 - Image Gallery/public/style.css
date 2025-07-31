@@ -1,0 +1,252 @@
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+@font-face {
+  font-family: 'QuarantypeHangout';
+  src: url('./assests/font/quarantype-hangout.ttf') format('truetype');
+}
+
+
+body {
+  font-family: 'QuarantypeHangout', Arial, sans-serif;
+}
+
+
+.header
+{
+    height: 50vh;
+    border-radius: 1em;
+    /* border: 1px solid red; */
+    padding: 10px 20px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5170ff;
+    box-shadow: 10px 10px 0 #000;
+}
+
+.header .content{
+    text-align: center;
+    color: white;
+}
+
+.content h1{
+    font-weight: 600;
+    font-size: 7.65rem;
+    /* padding: 10px; */
+}
+.content p{
+    
+    font-size: 1rem;
+   
+}
+.content .search-box
+{
+    /* border: 1px solid black; */
+    height: 55px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.search-box
+{
+     position: relative;
+     background-color: white;
+}
+
+.search-box img
+{
+    width: 24px;
+    position: absolute;
+    z-index: 2;
+    top: 20%;
+    left: 15px;
+    opacity: 50%;
+    transform: translateY(20%);
+   
+}
+
+.search-box input
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    outline: none;
+    border: 0;
+    border-radius: 8px;
+    padding-left: 50px;
+}
+
+/* Gallery */
+
+.gallery
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery .image-gallery
+{
+    gap: 25px;
+    columns: 5 350px;
+    max-width: 95%;
+    margin-top: 40px;
+}
+
+.image-gallery .image-card
+{
+    list-style-type: none;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.image-card img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.gallery .load-more
+{
+    margin: 50px auto;
+    padding: 10px 20px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: all 400ms ease;
+   font-family: 'QuarantypeHangout', Arial, sans-serif;
+}
+
+.gallery .load-more:hover
+{
+    box-shadow: 0 10px 0px #000;
+    transform: translateY(-10px);
+}
+
+.load-more .disabled
+{
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+    background-color: #5170ff;
+    color: white;
+}
+
+.image-card .card-info
+{
+    position: absolute;
+    width: 100%;
+    bottom: -20px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    height: 10vh;
+    background: linear-gradient(to top, #5170ff , transparent);
+    color: white;
+    padding: 10px;
+    transition: bottom 300ms ease;
+    border-radius: 0 0 8px 8px;
+}
+
+.image-card:hover .card-info
+{
+bottom: 10px;
+opacity: 100%;
+overflow: hidden;
+}
+
+.card-info button
+{
+    background-color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-info button img
+{
+    width: 20px;
+}
+
+.card-info .user
+{
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.user img
+{
+    width: 25px;
+}
+
+/* Lightbox  */
+
+.lightbox
+{
+    width: 100%;
+    height: 100%;
+    background-color: #0000006f;
+    position: fixed;
+    z-index: 3;
+}
+.lightbox .inner-lightbox
+{
+    position: absolute;
+    
+}
+
+
+
+
+
+button, input
+{
+    outline: none;
+    border: 0;
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    .content h1{
+    font-weight: 600;
+    font-size: 3rem;
+    padding: 10px;
+}}
+
