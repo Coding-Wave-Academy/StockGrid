@@ -2,6 +2,8 @@
 
 A responsive image gallery application built with JavaScript that uses the Pexels API to display and search for high-quality stock photos.
 
+![Screenshot](./assests/stockGrid-screenshot.png)
+
 ## Features
 
 - Browse curated photos from Pexels
@@ -17,13 +19,9 @@ A responsive image gallery application built with JavaScript that uses the Pexel
 - CSS3
 - JavaScript (Vanilla)
 - Pexels API
-- Express.js (Backend)
-
-## Getting Started
 
 ### Prerequisites
 
-- Node.js installed on your system
 - Pexels API key (get one from [Pexels]("https://api.pexels.com/v1/curated"))
 
 ### Installation
@@ -36,26 +34,6 @@ git clone https://github.com/Coding-Wave-Academy/StockGrid.git
 2. Navigate to project directory
 ```bash
 cd StockGrid
-```
-
-3. Install dependencies
-```bash
-npm install
-```
-
-4. Create a `.env` file in the root directory and add your Pexels API key:
-```
-PEXEL_API=your_api_key_here
-```
-
-5. Start the server
-```bash
-node server.js
-```
-
-6. Open your browser and visit:
-```
-http://localhost:3000
 ```
 
 ## Usage
